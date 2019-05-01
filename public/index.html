@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<meta charset="UTF-8" />
+		<title>Lab 9</title>
+	</head>
+	<body>
+		<h1 class="ui centered header">Marce's Blog Posts</h1>
+		<div class="ui segment">
+			<button class="fluid ui teal button getAllbutton">Get all posts</button>
+		</div>
+		<div class="ui segment">
+			<div class="ui grid">
+				<div class="four wide column">
+					<div class="ui segment">
+						<h2 class="ui dividing centered header">
+							Get post by author
+						</h2>
+						<form class="ui form">
+							<div class="field">
+							    <input type="text" placeholder="Author name" id="authorInput">
+							</div>
+							<button class="fluid ui teal button getAllbutton" id="authorButton">Go!</button>
+						</form>
+					</div>
+				</div>
+				<div class="four wide column">
+					<div class="ui segment">
+						<h2 class="ui dividing centered header">
+							Create new post
+						</h2>
+						<form class="ui form">
+							<div class="field">
+							    <input type="text" placeholder="Title" id="postTitle">
+							</div>
+							<div class="field">
+							    <input type="text" placeholder="Content" id="postContent">
+							</div>
+							<div class="field">
+							    <input type="text" placeholder="Author" id="postAuthor">
+							</div>
+							<div class="field">
+							    <input type="text" placeholder="Date" id="postPublishDate">
+							</div>
+							<button class="fluid ui teal button getAllbutton" id="newButton">Go!</button>
+						</form>
+					</div>
+				</div>
+				<div class="four wide column">
+					<div class="ui segment">
+						<h2 class="ui dividing centered header">
+							Delete post
+						</h2>
+						<form class="ui form">
+							<div class="field">
+							    <input type="text" placeholder="Post Id" id="idInput">
+							</div>
+							<button class="fluid ui teal button getAllbutton" id="deleteButton">Go!</button>
+						</form>
+					</div>
+				</div>
+				<div class="four wide column">
+					<div class="ui segment">
+						<h2 class="ui dividing centered header">
+							Put post
+						</h2>
+						<form class="ui form">
+							<div class="field">
+							    <input type="text" placeholder="Post Id" id="postId2">
+							</div>
+							<div class="field">
+							    <input type="text" placeholder="Title" id="postTitle2">
+							</div>
+							<div class="field">
+							    <input type="text" placeholder="Content" id="postContent2">
+							</div>
+							<div class="field">
+							    <input type="text" placeholder="Author" id="postAuthor2">
+							</div>
+							<div class="field">
+							    <input type="text" placeholder="Date" id="postDate2">
+							</div>
+							<button class="fluid ui teal button getAllbutton" id="putButton">Go!</button>
+						</form>			
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui segment">
+			<h2 class="ui dividing centered header">
+				Results
+			</h2>
+			<ul id="displayPosts"></ul>
+		</div>
+
+		<script type="text/javascript" src="./index.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+	</body>
+</html>
